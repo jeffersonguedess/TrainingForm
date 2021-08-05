@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">TrainingForm</string>
+
+
+    //Mensagens de erro
+    <string name="erro_senha_pequena" translatable="false">Digite uma senha com o minimo 6 caracteres.</string>
+    <string name="erro_sem_conexao_internet" translatable="false">Sem conexão com a internet</string>
+    <string name="erro_login_password" translatable="false">Email ou senha estão incorretos</string>
+    <string name="erro_logar" translatable="false">Erro ao logar!</string>
+
+    //Mensagend de aviso
+    <string name="aviso_prenecher_campos" translatable="false">Preencha todos os Campos</string>
+
+    //Descrição Filmes
+    <string name="descricao_filmes" translatable="true">
+        O mutante Geralt de Rívia é um caçador de monstros que luta para encontrar seu lugar num mundo onde as pessoas muitas vezes são mais perversas que as criaturas selvagens.
+    </string>
+    <string name="elenco_filmes">
+        Estrelando:Henry Cavill,Anya Chalotra,Freya Allan
+        Criação:Lauren Schmidt Hissrich
+    </string>
+    <string name="mais_filmes_series">Mais Filmes e Séries</string>
+    <string name="txt_titulo_filme">The Witcher</string>
+
 </resources>
