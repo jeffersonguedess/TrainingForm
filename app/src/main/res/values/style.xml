@@ -8,4 +8,8 @@
     <style name="ProgressBarStyle1">
         <item name="colorAccent">@color/black</item>
     </style>
+
+    <style name="ProgressBarStyle3">
+        <item name="colorAccent">@color/black_80</item>
+    </style>
 </resources>

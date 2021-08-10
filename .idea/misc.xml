@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/jeffe/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/btn_borda.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/jeffe/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/edit_fundo_formulario.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/jeffe/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/edit_txt_login.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/jeffe/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/fundo_button_cadastrar.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/jeffe/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/ic_launcher_background.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/jeffe/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/jeffe/AndroidStudioProjects/TrainingForm/app/src/main/res/layout/activity_forme_cadastro.xml" value="0.25" />
+        <entry key="..\:/Users/jeffe/AndroidStudioProjects/TrainingForm/app/src/main/res/layout/activity_forme_login.xml" value="0.5" />
+        <entry key="..\:/Users/jeffe/AndroidStudioProjects/TrainingForm/app/src/main/res/layout/activity_forme_treino.xml" value="0.307518115942029" />
+        <entry key="..\:/Users/jeffe/AndroidStudioProjects/TrainingForm/app/src/main/res/layout/activity_main.xml" value="0.307518115942029" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

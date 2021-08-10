@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TrainingForm">
-        <activity android:name=".FormeTreino"></activity>
+        <activity
+            android:name=".FormeCadastro"
+            android:exported="true" />
+        <activity
+            android:name=".activity_forme_cadastro"
+            android:exported="true" />
+        <activity android:name=".FormeTreino" />
         <activity android:name=".FormeLogin" />
         <activity android:name=".MainActivity">
             <intent-filter>
