@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "383643783411",
+    "project_id": "form-training-6a136",
+    "storage_bucket": "form-training-6a136.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383643783411:android:15c33972e7553f14b62786",
+        "android_client_info": {
+          "package_name": "br.trainingForme.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383643783411-7kbqd7g1s58gveu4i1s3d1ju1i2ckm8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFGGvqyd1P7NJXRBNqRE6oFu_WBUfkH3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383643783411-7kbqd7g1s58gveu4i1s3d1ju1i2ckm8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

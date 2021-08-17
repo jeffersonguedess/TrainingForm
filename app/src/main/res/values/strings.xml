@@ -1,12 +1,14 @@
 <resources>
-    <string name="app_name">TrainingForm</string>
+    <string name="app_name">Formulario de Treino</string>
 
 
     //Mensagens de erro
-    <string name="erro_senha_pequena" translatable="false">Digite uma senha com o minimo 6 caracteres.</string>
+    <string name="erro_senha_pequena" translatable="false">Senha com 6 digitos ou mais.</string>
     <string name="erro_sem_conexao_internet" translatable="false">Sem conexão com a internet</string>
     <string name="erro_login_password" translatable="false">Email ou senha estão incorretos</string>
     <string name="erro_logar" translatable="false">Erro ao logar!</string>
+    <string name="erro_usuario_ja_cadastrado">Este email já está cadastrado.</string>
+    <string name="erro_ao_cadastrar_usuario">Erro ao cadastrar usuário</string>
 
     //Mensagend de aviso
     <string name="aviso_prenecher_campos" translatable="false">Preencha todos os Campos</string>
@@ -14,4 +16,13 @@
     <string name="ficha_treino">Ficha de Treino</string>
     <string name="Name">Nome Aluno</string>
     <string name="Titulo_cadastro"> Crie sua conta</string>
+
+    //Tela formulario de cadastro de usuários
+    <string name="senha">Senha</string>
+    <string name="e_mail">E-mail</string>
+    <string name="txt_cadastro">Seja bem vindo! Faça seu cadastro.</string>
+    <string name="btn_cadastrar">Cadastrar</string>
+    <string name="sair">Sair</string>
+    <string name="menu_sair">Sair</string>
+    <string name="txt_outras_opcoes">OU</string>
 </resources>

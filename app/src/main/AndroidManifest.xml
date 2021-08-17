@@ -13,10 +13,9 @@
             android:name=".FormeCadastro"
             android:exported="true" />
         <activity
-            android:name=".activity_forme_cadastro"
-            android:exported="true" />
-        <activity android:name=".FormeTreino" />
-        <activity android:name=".FormeLogin" />
+            android:name=".FormeTreino"/>
+        <activity
+            android:name=".FormeLogin"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,5 +24,6 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
