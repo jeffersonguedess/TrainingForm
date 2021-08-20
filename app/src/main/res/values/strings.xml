@@ -2,6 +2,11 @@
     <string name="app_name">Formulario de Treino</string>
 
 
+    //String Facebook
+    <string name="facebook_app_id">161082226142582</string>
+    <string name="fb_login_protocol_scheme">fb161082226142582</string>
+    <string name="facebook_client_token">ec8c29f2c2f375fc56b62e66904082df</string>
+
     //Mensagens de erro
     <string name="erro_senha_pequena" translatable="false">Senha com 6 digitos ou mais.</string>
     <string name="erro_sem_conexao_internet" translatable="false">Sem conexão com a internet</string>
@@ -25,4 +30,6 @@
     <string name="sair">Sair</string>
     <string name="menu_sair">Sair</string>
     <string name="txt_outras_opcoes">OU</string>
+
+
 </resources>

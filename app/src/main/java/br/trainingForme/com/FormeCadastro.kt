@@ -1,6 +1,5 @@
 package br.trainingForme.com
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -40,6 +39,8 @@ class FormeCadastro : AppCompatActivity() {
                 cadastraUsuario()
             }
         }
+
+
     }
 
     private fun cadastraUsuario() {
@@ -67,6 +68,7 @@ class FormeCadastro : AppCompatActivity() {
 
             }
     }
+
 
 }
 

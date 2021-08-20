@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 
+
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,6 +19,9 @@ class MainActivity : AppCompatActivity() {
             abrirtelalogin()
 
         },2000)
+
+//        FacebookSdk.fullyInitialize()
+//        AppEventsLogger.activateApp(application)
     }
 
     private fun abrirtelalogin(){
@@ -24,4 +29,5 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
+    
 }

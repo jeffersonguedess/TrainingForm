@@ -20,6 +20,7 @@ class FormeLogin : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar!!.hide()
+        
 
         verificaUsuarioLogado()
 
@@ -36,8 +37,13 @@ class FormeLogin : AppCompatActivity() {
             }
         }
 
-        binding.txtTelaCadastro.setOnClickListener {
+        binding.txtTelaLoginParte2.setOnClickListener {
             val intent = Intent(this, FormeCadastro::class.java)
+            startActivity(intent)
+        }
+
+        binding.loginFacecook.setOnClickListener {
+            val intent = Intent(this, FormeTreino::class.java)
             startActivity(intent)
         }
 
