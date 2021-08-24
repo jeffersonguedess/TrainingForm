@@ -42,11 +42,6 @@ class FormeLogin : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.loginFacecook.setOnClickListener {
-            val intent = Intent(this, FormeTreino::class.java)
-            startActivity(intent)
-        }
-
     }
 
     private fun autenticarUsuario() {
@@ -83,7 +78,7 @@ class FormeLogin : AppCompatActivity() {
 
     private fun irParaTelaFormTreino() {
 
-        val intent = Intent(this, FormeTreino::class.java)
+        val intent = Intent(this, ListaAlunos::class.java)
         startActivity(intent)
         finish()
     }

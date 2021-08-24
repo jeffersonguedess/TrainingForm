@@ -5,20 +5,32 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import androidx.appcompat.widget.Toolbar
-import br.trainingForme.com.databinding.ActivityFormeTreinoBinding
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import br.trainingForme.com.Model.Users
+import br.trainingForme.com.databinding.ActivityListaAlunoBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
 
 
-class FormeTreino : AppCompatActivity() {
+class ListaAlunos : AppCompatActivity() {
 
-    private lateinit var binding: ActivityFormeTreinoBinding
+    private lateinit var binding: ActivityListaAlunoBinding
+    private lateinit var dbref: DatabaseReference
+    private lateinit var userRecycleview: RecyclerView
+    private lateinit var userArrayList: ArrayList<Users>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityFormeTreinoBinding.inflate(layoutInflater)
+        binding = ActivityListaAlunoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        userRecycleview = findViewById(R.id.recyclerview_aluno)
+        userRecycleview.layoutManager = LinearLayoutManager(this)
+        userRecycleview.setHasFixedSize(true)
+
+        userArrayList = arrayListOf<Users>()
+        //getU
 
     }
 
@@ -44,6 +56,5 @@ class FormeTreino : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
-
 
 }

@@ -1,8 +1,10 @@
 package br.trainingForme.com
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.content.res.AppCompatResources
 import br.trainingForme.com.databinding.ActivityFormeCadastroBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthUserCollisionException
@@ -20,6 +22,7 @@ class FormeCadastro : AppCompatActivity() {
 
         supportActionBar!!.hide()
 
+        toolbarCadastro()
 
         buttonCadastrar()
 
@@ -67,6 +70,16 @@ class FormeCadastro : AppCompatActivity() {
                 }
 
             }
+    }
+
+    private fun toolbarCadastro() {
+        val toolbarDetalhes = binding.toolbarFrameCadastro
+        toolbarDetalhes.navigationIcon = AppCompatResources.getDrawable(this, R.drawable.ic_voltar)
+        toolbarDetalhes.setOnClickListener {
+            val intent = Intent(this, FormeLogin::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
 
