@@ -59,6 +59,7 @@ class FormeCadastro : AppCompatActivity() {
                     binding.editTxtEmail.setText("")
                     binding.editTxtSenha.setText("")
                     mensagem_erro.text = ""
+                    finish()
                 }
             }.addOnFailureListener { error ->
                 when (error) {

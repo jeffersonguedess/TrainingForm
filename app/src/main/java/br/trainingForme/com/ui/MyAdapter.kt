@@ -1,4 +1,4 @@
-package br.trainingForme.com.UI
+package br.trainingForme.com.ui
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import br.trainingForme.com.R
-import br.trainingForme.com.Model.Users
+import br.trainingForme.com.model.Users
 
 class MyAdapter(private val usersList: ArrayList<Users>): RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
@@ -19,7 +19,7 @@ class MyAdapter(private val usersList: ArrayList<Users>): RecyclerView.Adapter<M
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentitem = usersList[position]
 
-        holder.nome.text = currentitem.nome.toString()
+        holder.nome.text = currentitem.nome
         holder.telefone.text = currentitem.telefone.toString()
     }
 

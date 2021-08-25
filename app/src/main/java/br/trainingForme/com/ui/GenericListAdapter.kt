@@ -1,4 +1,4 @@
-package br.trainingForme.com.UI
+package br.trainingForme.com.ui
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater

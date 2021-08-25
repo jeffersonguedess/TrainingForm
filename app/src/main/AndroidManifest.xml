@@ -10,26 +10,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TrainingForm">
-
+        <activity
+            android:name=".CadastroAluno"
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".FormeCadastro"
-            android:exported="true" />
-        <activity android:name=".ListaAlunos" />
-        <activity android:name=".FormeLogin" />
-        <activity android:name=".MainActivity">
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListaAlunos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FormeLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id" />
-        <meta-data
-            android:name="com.facebook.sdk.ClientToken"
-            android:value="@string/facebook_client_token" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

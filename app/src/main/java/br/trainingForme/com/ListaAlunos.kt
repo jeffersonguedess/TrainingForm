@@ -1,16 +1,20 @@
 package br.trainingForme.com
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import br.trainingForme.com.Model.Users
 import br.trainingForme.com.databinding.ActivityListaAlunoBinding
+import br.trainingForme.com.databinding.ItemVazioBinding
+import br.trainingForme.com.databinding.UserItemAlunoBinding
+import br.trainingForme.com.model.Users
+import br.trainingForme.com.ui.GenericListAdapter
+import br.trainingForme.com.ui.MyAdapter
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.*
 
 
 class ListaAlunos : AppCompatActivity() {
@@ -25,13 +29,77 @@ class ListaAlunos : AppCompatActivity() {
         binding = ActivityListaAlunoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        userArrayList = arrayListOf()
+        getUserData()
+
+    }
+
+    private fun setupRecycler() {
         userRecycleview = findViewById(R.id.recyclerview_aluno)
         userRecycleview.layoutManager = LinearLayoutManager(this)
         userRecycleview.setHasFixedSize(true)
 
-        userArrayList = arrayListOf<Users>()
-        //getU
+        userRecycleview.adapter = object : GenericListAdapter<Users>(
+            R.layout.user_item_aluno,
+            R.layout.item_vazio,
+            bind = { item, holder, _ ->
+                with(holder.itemView) {
 
+                    val viewBinding = UserItemAlunoBinding.bind(this)
+
+                    item.nome?.let { nome ->
+                        viewBinding.txtNome.text = nome
+                    }
+
+                    item.telefone?.let { number ->
+                        viewBinding.txtTelefone.text = number
+                    }
+
+                    viewBinding.cardAluno.setOnClickListener {
+
+                    }
+
+                }
+            },
+            bindEmpty = { holder ->
+                with(holder.itemView) {
+
+                    val viewBinding = ItemVazioBinding.bind(this)
+                    viewBinding.txtVazio.text = getText(R.string.item_vazio)
+                }
+            }
+        ) {}.apply {
+            submitList(userArrayList)
+        }
+
+    }
+
+    private fun getUserData() {
+        dbref = FirebaseDatabase.getInstance().getReference("Users")
+
+        dbref.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                if (snapshot.exists()) {
+                    for (userSnapshot in snapshot.children) {
+
+                        val user = userSnapshot.getValue(Users::class.java)
+                        user?.let { aluno ->
+                            userArrayList.add(aluno)
+
+                            setupRecycler()
+                        }
+
+                    }
+
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+
+
+        })
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

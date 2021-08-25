@@ -31,5 +31,11 @@
     <string name="menu_sair">Sair</string>
     <string name="txt_outras_opcoes">OU</string>
 
+    //Aviso de item vazio
+    <string name="item_vazio">Lista de alunos vazia</string>
+
+    //Fab novo aluno
+    <string name="novo_aluno">Novo</string>
+
 
 </resources>

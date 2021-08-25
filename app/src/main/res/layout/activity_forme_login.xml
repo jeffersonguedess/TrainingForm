@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".FormeLogin">
 
     <Toolbar
@@ -25,7 +26,7 @@
         android:layout_height="55dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/edit_txt_login"
         android:hint="Email"
         android:inputType="textEmailAddress"
