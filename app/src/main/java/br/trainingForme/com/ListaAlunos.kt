@@ -4,7 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.content.res.AppCompatResources
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import br.trainingForme.com.databinding.ActivityListaAlunoBinding
@@ -13,6 +15,7 @@ import br.trainingForme.com.databinding.UserItemAlunoBinding
 import br.trainingForme.com.model.Users
 import br.trainingForme.com.ui.GenericListAdapter
 import br.trainingForme.com.ui.MyAdapter
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
@@ -31,6 +34,25 @@ class ListaAlunos : AppCompatActivity() {
 
         userArrayList = arrayListOf()
         getUserData()
+
+
+        val fab: View = findViewById(R.id.extended_fab_novo)
+
+        fab.setOnClickListener {
+
+            val intent = Intent(this, CadastroAluno::class.java)
+            startActivity(intent)
+
+//            Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
+//                .setAction("Action", null)
+//                .show()
+        }
+
+    }
+
+    private fun navigationFormeTreino(){
+        val intent = Intent(this, FormeTreino::class.java)
+        startActivity(intent)
 
     }
 
@@ -56,6 +78,7 @@ class ListaAlunos : AppCompatActivity() {
                     }
 
                     viewBinding.cardAluno.setOnClickListener {
+                        navigationFormeTreino()
 
                     }
 
