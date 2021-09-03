@@ -10,4 +10,10 @@
     <color name="gray">#918C8C</color>
     <color name="black_80">#221D1D</color>
     <color name="blue">#102DD3</color>
+
+    //style menu
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="skyBlue">#87CEEB</color>
 </resources>

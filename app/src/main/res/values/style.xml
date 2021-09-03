@@ -12,4 +12,12 @@
     <style name="ProgressBarStyle3">
         <item name="colorAccent">@color/black_80</item>
     </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:textColor">@color/colorPrimary</item>
+    <item name="android:itemBackground">@color/skyBlue</item>
+</style>
 </resources>

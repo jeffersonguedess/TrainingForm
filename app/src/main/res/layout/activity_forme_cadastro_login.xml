@@ -89,7 +89,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
-        android:background="@drawable/btn_cadastrar"
+        android:background="@drawable/btn_borda"
         android:padding="15dp"
         android:text="@string/btn_cadastrar"
         android:textAllCaps="false"
@@ -105,13 +105,13 @@
         android:id="@+id/toolbar_Frame_cadastro"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:paddingStart="10dp"
         app:navigationIcon="@drawable/ic_voltar"
         android:background="@color/black_80"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:title="@string/Titulo_cadastro"
+        app:titleMarginStart="50dp"
         app:titleTextColor="@color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

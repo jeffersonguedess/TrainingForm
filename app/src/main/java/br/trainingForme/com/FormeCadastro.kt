@@ -5,18 +5,18 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
-import br.trainingForme.com.databinding.ActivityFormeCadastroBinding
+import br.trainingForme.com.databinding.ActivityFormeCadastroLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException
 
 class FormeCadastro : AppCompatActivity() {
 
-    private lateinit var binding: ActivityFormeCadastroBinding
+    private lateinit var binding: ActivityFormeCadastroLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityFormeCadastroBinding.inflate(layoutInflater)
+        binding = ActivityFormeCadastroLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         (supportActionBar ?: return).hide()

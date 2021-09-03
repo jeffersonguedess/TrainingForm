@@ -7,26 +7,17 @@
     android:background="@drawable/edit_fundo_formulario"
     tools:context=".ListaAlunos">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_forme_treino"
-        android:backgroundTint="@color/black_80"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </androidx.appcompat.widget.Toolbar>
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview_aluno"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_forme_treino"
-        tools:listitem="@layout/user_item_aluno"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/user_item_aluno" />
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/extended_fab_novo"
@@ -38,10 +29,10 @@
         app:icon="@drawable/ic_novo_aluno"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintHorizontal_bias="0.831"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_forme_treino"
-        app:layout_constraintVertical_bias="0.86" />
+        app:layout_constraintTop_toTopOf="@+id/recyclerview_aluno"
+        app:layout_constraintVertical_bias="0.893" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

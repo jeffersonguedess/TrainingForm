@@ -2,11 +2,13 @@ package br.trainingForme.com
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.style.BackgroundColorSpan
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import br.trainingForme.com.databinding.ActivityListaAlunoBinding
@@ -14,7 +16,6 @@ import br.trainingForme.com.databinding.ItemVazioBinding
 import br.trainingForme.com.databinding.UserItemAlunoBinding
 import br.trainingForme.com.model.Users
 import br.trainingForme.com.ui.GenericListAdapter
-import br.trainingForme.com.ui.MyAdapter
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
@@ -33,9 +34,15 @@ class ListaAlunos : AppCompatActivity() {
         setContentView(binding.root)
 
         userArrayList = arrayListOf()
+
         getUserData()
 
+        fabView()
 
+
+    }
+
+    private fun fabView() {
         val fab: View = findViewById(R.id.extended_fab_novo)
 
         fab.setOnClickListener {
@@ -43,14 +50,15 @@ class ListaAlunos : AppCompatActivity() {
             val intent = Intent(this, CadastroAluno::class.java)
             startActivity(intent)
 
-//            Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
-//                .setAction("Action", null)
-//                .show()
         }
+    }
+
+    private fun getItemCount() {
+        println(userArrayList.size)
 
     }
 
-    private fun navigationFormeTreino(){
+    private fun navigationFormeTreino() {
         val intent = Intent(this, FormeTreino::class.java)
         startActivity(intent)
 
@@ -106,14 +114,15 @@ class ListaAlunos : AppCompatActivity() {
                     for (userSnapshot in snapshot.children) {
 
                         val user = userSnapshot.getValue(Users::class.java)
-                        user?.let { aluno ->
-                            userArrayList.add(aluno)
 
-                            setupRecycler()
+                        user?.let { aluno ->
+
+                            userArrayList.add(aluno)
+                            getItemCount()
                         }
+                        setupRecycler()
 
                     }
-
                 }
             }
 
@@ -147,5 +156,6 @@ class ListaAlunos : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
+
 
 }
