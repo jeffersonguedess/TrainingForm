@@ -18,8 +18,11 @@ class FormeTreino : AppCompatActivity() {
         (supportActionBar ?: return).hide()
         toolbarCadastroAluno()
 
-    }
+        val getName = intent.getStringExtra("nome") ?: ""
 
+        binding.recebeNome.text = getName
+
+    }
 
     private fun toolbarCadastroAluno() {
         val toolbarDetalhes = binding.toolbarCadastroTreino

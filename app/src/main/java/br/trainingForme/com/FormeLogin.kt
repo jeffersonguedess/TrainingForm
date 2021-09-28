@@ -24,6 +24,7 @@ class FormeLogin : AppCompatActivity() {
 
         verificaUsuarioLogado()
 
+
         binding.btnEntrar.setOnClickListener {
 
             val email = binding.edtEmail.text.toString()

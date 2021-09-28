@@ -1,11 +1,20 @@
 package br.trainingForme.com
 
 import android.content.Intent
+import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MotionEvent
+import android.view.View
+import android.widget.EditText
 import androidx.appcompat.content.res.AppCompatResources
 import br.trainingForme.com.databinding.ActivityCadastroAlunoBinding
 import com.google.android.material.snackbar.Snackbar
+import android.R.color
+import android.graphics.PorterDuffColorFilter
+import androidx.core.graphics.BlendModeColorFilterCompat
+import androidx.core.graphics.BlendModeCompat
+
 
 class CadastroAluno : AppCompatActivity() {
 
@@ -30,4 +39,6 @@ class CadastroAluno : AppCompatActivity() {
             finish()
         }
     }
+
+
 }

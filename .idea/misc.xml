@@ -3,16 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable-v24/edit_txt_login.xml" value="0.37604166666666666" />
         <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/btn_borda.xml" value="0.37604166666666666" />
+        <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/btn_cadastrar.xml" value="0.37604166666666666" />
+        <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/button_effect.xml" value="0.37604166666666666" />
+        <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/cursor.xml" value="0.37604166666666666" />
         <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/edit_fundo_formulario.xml" value="0.37604166666666666" />
+        <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/edit_text_cadastro.xml" value="0.37604166666666666" />
+        <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/edit_txt_login.xml" value="0.37604166666666666" />
+        <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/fundo_button_cadastrar.xml" value="0.37604166666666666" />
+        <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/ic_launcher_background.xml" value="0.37604166666666666" />
+        <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.37604166666666666" />
         <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/ic_sair.xml" value="0.37604166666666666" />
         <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/drawable/ic_voltar.xml" value="0.37604166666666666" />
-        <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/layout/activity_cadastro_aluno.xml" value="0.34057971014492755" />
+        <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/layout/activity_cadastro_aluno.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/layout/activity_cardview_cadastro_treino.xml" value="0.33967391304347827" />
         <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/layout/activity_forme_cadastro.xml" value="0.32019927536231885" />
+        <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/layout/activity_forme_cadastro_login.xml" value="0.358695652173913" />
         <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/layout/activity_forme_login.xml" value="0.34057971014492755" />
-        <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/layout/activity_forme_treino.xml" value="0.34556159420289856" />
+        <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/layout/activity_forme_treino.xml" value="0.33" />
         <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/layout/activity_lista_aluno.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/layout/activity_main.xml" value="0.34057971014492755" />
+        <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/layout/card_form_training.xml" value="0.33967391304347827" />
         <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/layout/item_vazio.xml" value="0.33" />
         <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/layout/user_item_aluno.xml" value="0.34057971014492755" />
         <entry key="..\:/AndroidStudioProjects/TrainingForm/app/src/main/res/menu-v26/menu_deslogar.xml" value="0.35989583333333336" />

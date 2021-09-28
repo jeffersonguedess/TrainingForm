@@ -9,7 +9,7 @@
     tools:context=".FormeCadastro">
 
 
-    <EditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/edit_txt_senha"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -19,6 +19,7 @@
         android:background="@drawable/edit_text_cadastro"
         android:ems="10"
         android:hint="@string/senha"
+        android:textCursorDrawable="@drawable/cursor"
         android:inputType="numberPassword"
         android:paddingStart="15dp"
         android:textColor="@color/white"
@@ -29,7 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_txt_email" />
 
-    <EditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/edit_txt_email"
         android:layout_width="0dp"
         android:layout_height="50dp"
@@ -39,8 +40,10 @@
         android:background="@drawable/edit_text_cadastro"
         android:ems="10"
         android:hint="@string/e_mail"
+        android:textCursorDrawable="@drawable/cursor"
         android:inputType="textEmailAddress"
         android:paddingStart="15dp"
+        android:cursorVisible="true"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textStyle="bold"
@@ -49,7 +52,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_aviso_cadastro" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/txt_msg_erro"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -66,7 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edit_txt_senha" />
 
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/txt_aviso_cadastro"
         android:layout_width="335dp"
         android:layout_height="wrap_content"
@@ -86,10 +89,10 @@
         android:id="@+id/btn_cadastrar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="15dp"
-        android:background="@drawable/btn_borda"
+        android:background="@drawable/button_effect"
         android:padding="15dp"
         android:text="@string/btn_cadastrar"
         android:textAllCaps="false"

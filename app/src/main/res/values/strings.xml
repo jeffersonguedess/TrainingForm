@@ -36,6 +36,17 @@
 
     //Fab novo aluno
     <string name="novo_aluno">Novo</string>
+    <string name="nome">Nome</string>
+    <string name="nome_aluno">Nome</string>
+    <string name="telefone">Telefone</string>
+    <string name="link_de_inscrição">Inscreva-se agora.</string>
+    <string name="novo_por_aqui">Novo por aqui?</string>
+    <string name="ajuda">Precisa de Ajuda?</string>
+    <string name="entrar">Entrar</string>
+    <string name="email">Email</string>
+    <string name="nome_card">Nome:</string>
+    <string name="telefone_card">Telefone:</string>
+    <string name="cadastrar_dados_dos_alunos">Cadastrar dados dos alunos.</string>
 
 
 </resources>

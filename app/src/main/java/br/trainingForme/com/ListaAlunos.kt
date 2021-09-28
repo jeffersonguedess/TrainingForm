@@ -2,13 +2,10 @@ package br.trainingForme.com
 
 import android.content.Intent
 import android.os.Bundle
-import android.text.style.BackgroundColorSpan
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.content.res.AppCompatResources
-import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import br.trainingForme.com.databinding.ActivityListaAlunoBinding
@@ -16,7 +13,6 @@ import br.trainingForme.com.databinding.ItemVazioBinding
 import br.trainingForme.com.databinding.UserItemAlunoBinding
 import br.trainingForme.com.model.Users
 import br.trainingForme.com.ui.GenericListAdapter
-import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
@@ -58,10 +54,10 @@ class ListaAlunos : AppCompatActivity() {
 
     }
 
-    private fun navigationFormeTreino() {
+    private fun navigationFormeTreino(nome: String?) {
         val intent = Intent(this, FormeTreino::class.java)
+        intent.putExtra("nome", nome)
         startActivity(intent)
-
     }
 
     private fun setupRecycler() {
@@ -86,8 +82,7 @@ class ListaAlunos : AppCompatActivity() {
                     }
 
                     viewBinding.cardAluno.setOnClickListener {
-                        navigationFormeTreino()
-
+                        navigationFormeTreino(item.nome)
                     }
 
                 }
@@ -127,7 +122,7 @@ class ListaAlunos : AppCompatActivity() {
             }
 
             override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
+
             }
 
 

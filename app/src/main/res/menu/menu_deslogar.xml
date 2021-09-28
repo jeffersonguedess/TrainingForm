@@ -8,6 +8,4 @@
         android:title="@string/menu_sair"
         app:showAsAction="never"
         tools:targetApi="o" />
-
-
 </menu>
